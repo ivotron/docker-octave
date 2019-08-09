@@ -1,19 +1,5 @@
 # Octave
 
-Lightweight development environment for testing Octave scripts.
+Small tweak to [`ome/octave`][octave] to not create an `octave` user.
 
-## Usage
-Build the image
-```
-$ docker build -t octave .
-```
-
-Run
-```
-$ docker run --rm -it octave                   # Octave shell
-$ docker run --rm -it --entrypoint bash octave # Bash shell
-$ docker run --rm octave -h                    # Get octave help
-$ docker run --rm -v $(pwd):/source octave /source/myfile.m
-```
-
-Mount your local source folder to the container and run it inside the container.
+[octave]: https://github.com/ome/octave-docker
